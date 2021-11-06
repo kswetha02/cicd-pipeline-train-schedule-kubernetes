@@ -2,10 +2,10 @@ kind: Service
 apiVersion: v1
 metadata:
   name: train-schedule-service
-spec:
-  type: NodePort
-  selector:
-    apps: train-schedule
+  spec:
+    type: NodePort
+    selector:
+      apps: train-schedule
   ports:
   - protocol: TCP
     port: 8080
